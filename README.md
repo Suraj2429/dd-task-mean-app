@@ -127,8 +127,19 @@ Configured inside `docker-compose.yml`
 - mongodb  
 
 
-## Command Used on EC2
+## 📦 How to Reproduce Deployment
+# 1️⃣ Clone Repository
+git clone https://github.com/Suraj2429/dd-task-mean-app.git
+cd dd-task-mean-app
 
-```bash
+# 2️⃣ Build Docker Images
+docker build -t backend ./backend
+docker build -t frontend ./frontend
+
+# 3️⃣ Run Using Docker Compose
 docker-compose up -d
+# 4️⃣ Access Application
+
+Open in browser:
+http://43.205.140.151/
           
